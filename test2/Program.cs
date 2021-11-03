@@ -12,7 +12,7 @@ namespace test2
         {
             instance++;
         }
-        public void HowManyCats()
+        public void HowManyCat()
         {
             Console.WriteLine("{0} Cats",instance);
         }
@@ -27,21 +27,13 @@ namespace test2
         public static void Main()
         {
             Cat blackCat = new Cat();
-            blackCat.HowManyCats();
+            blackCat.HowManyCat();
 
             Cat yellowCat = new Cat();
-            yellowCat.HowManyCats();
+            yellowCat.HowManyCat();
             
             Cat whiteCat = new Cat();
-            whiteCat.HowManyCats();
-
-            whiteCat.instance = 10;
-
-            blackCat.HowManyCats();
-
-            yellowCat.HowManyCats();
-
-            whiteCat.HowManyCats();
+            whiteCat.HowManyCat();
 
             Console.ReadKey();
         }
